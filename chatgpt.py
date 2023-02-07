@@ -4,7 +4,7 @@ import openai
 from pyrogram import filters, Client
 
 
-LeosBot = Client(name="OpenaiBot",bot_token=wow.bot_token,api_id=wow.api_id,api_hash=wow.api_hash)
+LeosBot = Client(name="OpenaiBot",api_id=wow.api_id,api_hash=wow.api_hash,bot_token=wow.bot_token)
 
 async def ai(query):
     openai.api_key = wow.openai_api_key
